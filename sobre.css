@@ -86,7 +86,7 @@ nav ul li.dropdown {
 nav ul li.dropdown .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%; 
+  top: 100%;
   left: 0;
   background-color: #2e0067;
   border-radius: 0 0 8px 8px;
@@ -130,12 +130,6 @@ nav ul li.dropdown > a {
 }
 
 nav ul li.dropdown > a::after {
-  width: 0 !important;        
-  background-color: transparent !important; /* linha invisível */
-  transition: none !important;
-}
-
-nav ul li.dropdown > a::after {
   content: "▾";
   position: absolute;
   right: 0.3rem;
@@ -143,11 +137,14 @@ nav ul li.dropdown > a::after {
   transform: translateY(-50%);
   font-size: 0.7rem;
   color: white;
+  width: auto !important;
+  background-color: transparent !important;
+  transition: none !important;
 }
 
 .hero {
   height: 395px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)),
               url('src/galaxia.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
@@ -179,6 +176,11 @@ nav ul li.dropdown > a::after {
   gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.carousel.animated {
+  animation: fadeIn 0.8s ease-out forwards;
 }
 
 .card {
@@ -208,6 +210,8 @@ nav ul li.dropdown > a::after {
 
 .card h3 {
   margin: 1rem 0 0.5rem;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 0.5s forwards;
 }
 
 .btn {
@@ -218,21 +222,18 @@ nav ul li.dropdown > a::after {
   font-weight: bold;
   border: none;
   padding: 0.6rem 1.5rem;
-  border-radius: 30px; /* Borda arredondada */
+  border-radius: 30px;
   cursor: pointer;
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.3s ease;
   box-shadow: 0 0 10px rgba(255, 207, 63, 0.4);
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 0.5s forwards;
 }
 
 .btn:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(255, 207, 63, 0.6);
-}
-
-.card h3, .card .btn {
-  opacity: 0;
-  animation: fadeIn 0.8s ease-out 0.5s forwards;
 }
 
 .card-text {
@@ -403,7 +404,7 @@ nav ul li.dropdown > a::after {
 #formCadastro {
   display: flex;
   flex-direction: column;
-  align-items: center; /* isso centraliza os inputs horizontalmente */
+  align-items: center;
   gap: 1.2rem;
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 207, 63, 0.2);
@@ -417,8 +418,8 @@ nav ul li.dropdown > a::after {
 
 #formCadastro input {
   padding: 0.8rem 1rem;
-  width: 100%; /* agora ocupa 100% da área do form */
-  max-width: 400px; /* limita para não ficar esticado em telas grandes */
+  width: 100%;
+  max-width: 400px;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background-color: rgba(255, 255, 255, 0.07);
@@ -457,7 +458,7 @@ nav ul li.dropdown > a::after {
 }
 
 footer {
-  background-color: #09000F ;
+  background-color: #09000F;
   padding: 2.5rem 1rem;
   text-align: center;
   color: #ffcf3f;
@@ -502,20 +503,7 @@ footer {
   box-shadow: 0 0 12px #ffcf3f;
 }
 
-
-
-
 @keyframes fadeIn {
   from { opacity: 0; transform: translateX(20px); }
   to { opacity: 1; transform: translateX(0); }
-}
-
-/* Aplica a animação ao carrossel */
-.carousel {
-  animation: fadeIn 0.8s ease-out forwards;
-}
-
-/* Reinicia a animação quando o slide muda */
-.carousel.animated {
-  animation: fadeIn 0.8s ease-out forwards;
 }

@@ -1,7 +1,7 @@
+
 /* Reset e base */
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap');
 
-/* Reset e base */
 body {
   margin: 0;
   font-family: 'Inria Sans', sans-serif;
@@ -10,7 +10,6 @@ body {
 }
 
 /* Header */
-/* Header melhorado */
 header {
   background-color: #24004B;
   padding: 1rem 2rem;
@@ -81,12 +80,11 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-/* Estilo base para o dropdown */
+/* Dropdown */
 nav ul li.dropdown {
   position: relative;
 }
 
-/* Submenu escondido por padrão */
 nav ul li.dropdown .dropdown-menu {
   display: none;
   position: absolute;
@@ -100,7 +98,6 @@ nav ul li.dropdown .dropdown-menu {
   padding: 0.5rem 0;
 }
 
-/* Itens do submenu */
 nav ul li.dropdown .dropdown-menu li {
   padding: 0;
   margin: 0;
@@ -122,21 +119,14 @@ nav ul li.dropdown .dropdown-menu li a:hover {
   font-weight: 600;
 }
 
-/* Mostrar submenu no hover */
 nav ul li.dropdown:hover > .dropdown-menu {
   display: block;
 }
 
-/* Pequena seta no item principal */
+/* Seta no dropdown */
 nav ul li.dropdown > a {
   position: relative;
   padding-right: 1rem;
-}
-
-nav ul li.dropdown > a::after {
-  width: 0 !important;        
-  background-color: transparent !important; /* linha invisível */
-  transition: none !important;
 }
 
 nav ul li.dropdown > a::after {
@@ -149,6 +139,7 @@ nav ul li.dropdown > a::after {
   color: white;
 }
 
+/* Main */
 main {
   flex-grow: 1;
   max-width: 1100px;
@@ -156,15 +147,17 @@ main {
   padding: 0 1rem;
 }
 
+/* Títulos */
 h2 {
   color: #ffcf3f;
-  margin-bottom: 2rem; /* aumenta o espaçamento abaixo do título */
+  margin-bottom: 2rem;
   text-align: center;
-  font-size: 2.2rem; /* aumenta o tamanho do título */
+  font-size: 2.2rem;
   font-weight: 800;
   letter-spacing: 0.05em;
 }
 
+/* Descrição */
 .descricao {
   max-width: 700px;
   margin: 0 auto 2.5rem auto;
@@ -173,7 +166,6 @@ h2 {
   text-align: center;
   color: #ffcf3f;
   font-weight: 700;
-  /* text-shadow removido */
   letter-spacing: 0.04em;
   background: rgba(46, 0, 103, 0.5);
   padding: 1.2rem 2rem;
@@ -218,7 +210,7 @@ select:hover {
 /* Galeria */
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
 
@@ -226,14 +218,14 @@ select:hover {
   background-color: #2B0431;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(255,207,63,0.3);
+  box-shadow: 0 0 20px rgba(255, 207, 63, 0.3);
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
 .galeria-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(255,207,63,0.6);
+  box-shadow: 0 0 25px rgba(255, 207, 63, 0.6);
 }
 
 .galeria-item img {
@@ -251,8 +243,9 @@ select:hover {
   font-size: 1rem;
 }
 
+/* Footer */
 footer {
-  background-color: #09000F ;
+  background-color: #09000F;
   padding: 2.5rem 1rem;
   text-align: center;
   color: #ffcf3f;
@@ -296,3 +289,4 @@ footer {
   color: #2e0067;
   box-shadow: 0 0 12px #ffcf3f;
 }
+
