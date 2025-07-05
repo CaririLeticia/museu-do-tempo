@@ -500,7 +500,7 @@ footer {
 .footer-content ul li:hover {
   background-color: #ffcf3f;
   color: #2e0067;
-  box-shadow: 0 0 12px #ffcf3f;
+  box-shadow: 0 0 12px #ffcf3f50;
 }
 
 @keyframes fadeIn {
