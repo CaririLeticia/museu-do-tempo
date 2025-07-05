@@ -1,0 +1,73 @@
+@import "tailwindcss";
+/* @import url('https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap'); */
+
+:root {
+  --primary-color: #09000F;
+  --secondary-color: #24004B;
+  --bg-input: rgba(255, 255, 255, 0.07);
+  --bg-form: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inria Sans', sans-serif;
+  background-color: #09000F;
+  color: white;
+}
+
+#form__cadastro{
+  background-color: var(--bg-form);
+  border: 1px solid rgba(255, 207, 63, 0.2);
+}
+
+#section__title {
+  text-shadow: 0 0 8px rgba(255, 207, 63, 0.4);
+}
+
+#nome__quadro, #img__url, #categoria{
+  background-color: var(--bg-input);
+  border: 1px solid rgba(255, 255, 255, 0.199) ;
+}
+
+#form__cadastro input{
+  transition: border 0.3s ease, background-color 0.3s ease;
+}
+#form__cadastro input:focus {
+  border-color: #ffcf3f;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#cadastrar__btn{
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 207, 63, 0.4);
+  animation: fadeIn 0.8s ease-out 0.5s forwards;
+}
+
+#cadastrar__btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 207, 63, 0.6);
+}
+
+/* Footer */
+
+#footer-container{
+  padding-top: 20px;
+}
+#footer-container  li:hover {
+  background-color: #ffcf3f;
+  color: #2e0067;
+  box-shadow: 0 0 12px #ffcf3f;
+}
+#footer-container h2{
+  text-shadow: 0 0 8px rgba(255, 207, 63, 0.4);
+}
+#footer__perfil a:hover{
+  color: #2e0067;
+
+}
+#footer__perfil{
+  background: rgba(255, 207, 63, 0.2);
+  border-radius: 12px;
+  color: #fff3a0;
+  box-shadow: 0 0 8px rgba(255, 207, 63, 0.3);
+}
