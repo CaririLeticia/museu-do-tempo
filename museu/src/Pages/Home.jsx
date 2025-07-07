@@ -5,6 +5,7 @@ export const Home = () => {
     return(
         <>
             <Carrousel/>
+            <Hero/>
             <TimeLine/>
         </>
     )

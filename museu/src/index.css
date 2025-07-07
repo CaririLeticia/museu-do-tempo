@@ -438,3 +438,20 @@ nav ul li.dropdown > a::after {
   pointer-events: auto;
   transform: translateX(-50%) translateY(-10px);
 }
+
+/* Hero */
+.hero {
+  height: 395px;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)),
+              url('src/galaxia.jpg') center/cover no-repeat; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero h1 {
+  font-size: 1.8rem;
+  max-width: 800px;
+}
