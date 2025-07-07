@@ -1,3 +1,4 @@
+// import { logo } from "../assets/museuLogo.png"
 export const Header = () => {
     return(
         <>
@@ -5,7 +6,7 @@ export const Header = () => {
             <header>
                 <div class="header-content">
                 <div class="logo">
-                    <img src="/museu-do-tempo/src/assets/museuLogo.png" alt="Museu do Tempo" />
+                    <img src="" alt="Museu do Tempo" />
                     <span>MUSEU DO TEMPO</span>
                 </div>
                 <nav>
