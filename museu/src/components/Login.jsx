@@ -5,6 +5,10 @@ export const Login = (props) => {
     const handleCadastro = () => {
         navigate("/cadastro")
     }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
     return(
         <>
             <section className="flex">
@@ -24,7 +28,7 @@ export const Login = (props) => {
                                 <input className="w-11/12 p-2  focus:border-amber-300 focus:ring-1 focus:ring-amber-200 outline-none rounded-2xl transition-all duration-300 ease-in-out" type="text" placeholder="confirm password"/>
                             </div>
                             <p className="text-center text-cyan-900 hover:text-cyan-950">Não tem Conta? <span className="underline hover:text-cyan-700" onClick={handleCadastro}>Criar</span></p>
-                            <button className="bg-purple-900 hover:bg-purple-950 w-2/4 m-auto rounded-2xl p-2 mt-4 cursor-pointer ">cadastrar</button>
+                            <button className="bg-purple-900 hover:bg-purple-950 w-2/4 m-auto rounded-2xl p-2 mt-4 cursor-pointer ">fazer login</button>
                     </form>
                 </div>
                 <div className="w-4/6">
