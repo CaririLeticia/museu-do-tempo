@@ -8,7 +8,11 @@ export const Footer = () => {
 
   return (
     <>
+<<<<<<< HEAD
       <section id="footer-container" className="absolute bottom-2 p-2 w-full">
+=======
+      <section id="footer-container">
+>>>>>>> 0e7772325dff565b6a8eaf97ad6ff82b95fe074e
         <h2 className="text-center text-amber-300 font-bold text-2xl pb-3">Equipe:</h2>
         <div className="w-full flex justify-center">
            
