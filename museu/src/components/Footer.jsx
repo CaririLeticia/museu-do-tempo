@@ -2,7 +2,7 @@ export const Footer = () => {
   const perfil = [
     { nome: "Leticia", github: "https://www.youtube.com/" },
     { nome: "Caio", github: "https://www.youtube.com/" },
-    { nome: "Bob", github: "https://www.youtube.com/" },
+    { nome: "Jorge", github: "https://www.youtube.com/" },
     { nome: "Pablo", github: "https://www.youtube.com/" },
   ];
 
