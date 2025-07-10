@@ -20,10 +20,10 @@ function SobreQuadro() {
   }
   return (
     <section className="w-full bg-gradient-to-br from-purple-950 via-indigo-900 to-black text-white p-6 flex flex-col items-center">
-      <h1 className="text-3xl font-bold mb-4">{obra.nome}</h1>
+      <h1 className="text-3xl font-bold mb-4 selection:text-amber-200">{obra.nome}</h1>
       <p className="italic text-purple-300 mb-2">Artista: {obra.artista}</p>
       <img
-        src={obra.imagem}
+        src={obra.imagem || "Não foi possível carregar. Tente novamente depois"}
         alt={obra.nome}
         className="max-w-md rounded-2xl shadow-2xl mb-6"
       />
