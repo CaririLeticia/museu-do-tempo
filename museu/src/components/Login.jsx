@@ -13,7 +13,7 @@ export const Login = (props) => {
         if (!nome || !email) {
             setErrMsg("Preencha todos os campos")
         } else{
-            console.log({nome: nome, email:email})
+            console.log(`User: ${{nome: nome, email:email}}`)
         }
     }
 
@@ -21,7 +21,7 @@ export const Login = (props) => {
         const { name, value } = e.target();
         
         if (nome === "nome") setNome(value);
-        if (nome === "email") setNome(value);
+        if (nome === "email") setEmail(value);
     }
     return(
         <>
@@ -31,10 +31,6 @@ export const Login = (props) => {
                     <form
                     onSubmit={handleSubmit}
                     className="flex flex-col p-2">
-                            {/* <div className="p-2 flex justify-center">
-                                <input 
-                                className="w-11/12 p-2 hover:border-gray-50 focus:border-amber-300 focus:ring-1 focus:ring-amber-200 outline-none rounded-2xl transition-all duration-300 ease-in-out" type="text" placeholder="Name"/>
-                            </div> */}
                             <div className="p-2 flex justify-center">
                                 <input 
                                 required
@@ -47,13 +43,11 @@ export const Login = (props) => {
                                 value={email}
                                 className="w-11/12 p-2  focus:border-amber-300 focus:ring-1 focus:ring-amber-200 outline-none rounded-2xl transition-all duration-300 ease-in-out" type="text" placeholder="password"/>
                             </div>
-                            {/* <div className="p-2 flex justify-center">
-                                <input className="w-11/12 p-2  focus:border-amber-300 focus:ring-1 focus:ring-amber-200 outline-none rounded-2xl transition-all duration-300 ease-in-out" type="text" placeholder="confirm password"/>
-                            </div> */}
                             <button 
                             onClick={navigate("/cadastro")}
                             className="text-center text-cyan-900 hover:text-cyan-950">Não tem Conta? Criar</button>
                             <button className="bg-purple-900 hover:bg-purple-950 w-2/4 m-auto rounded-2xl p-2 mt-4 cursor-pointer">fazer login</button>
+                            {errMsg && <p className="text-red-800 font-semibold">{errMsg}</p>}
                     </form>
                 </div>
                 <div className="w-4/6">

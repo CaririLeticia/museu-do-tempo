@@ -8,7 +8,7 @@ export const Footer = () => {
 
   return (
     <>
-      <section id="footer-container">
+      <section id="footer-container" className="absolute bottom-2 p-2 w-full">
         <h2 className="text-center text-amber-300 font-bold text-2xl pb-3">Equipe:</h2>
         <div className="w-full flex justify-center">
            
