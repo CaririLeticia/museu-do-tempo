@@ -6,7 +6,7 @@ export const Header = () => {
             <header>
                 <div class="header-content">
                 <div class="logo">
-                    <img src="" alt="Museu do Tempo" />
+                    <img src="" alt="museu do tempo logo" />
                     <span>MUSEU DO TEMPO</span>
                 </div>
                 <nav>
