@@ -4,9 +4,10 @@ import { Home } from "../Pages/Home";
 import { Footer } from "../components/Footer";
 import { Cadastro } from "../components/Cadastro";
 import { Login } from "../components/Login";
-import Card from "../components/Card";
 import SobreQuadro from "../Pages/SobreQuadro";
 import { Quadros } from "../Pages/Quadros";
+import FiltroPorCategoria from "../Pages/FiltroPorCategoria";
+import { NotFound } from "../Pages/NotFound";
 export const Paths = () => {
     return(
         <>
@@ -17,9 +18,9 @@ export const Paths = () => {
                     <Route path="/cadastro" element={<Cadastro/>}/>
                     <Route path="/login" element={<Login/>}/>
                     <Route path="/quadros/obra/:id" element={<SobreQuadro/>}/>
-                    <Route path="quadros/categoria/:categoria" />
+                    <Route path="/quadros/categoria/:categoria" element={<FiltroPorCategoria/>}/>
                     <Route path="/quadros" element={<Quadros/>}/>
-                    <Route path="/card" element={<Card/>}/> 
+                    <Route path="*" element={<NotFound/>}/>
                 </Routes>
             <Footer/>
         </BrowserRouter>
