@@ -7,8 +7,10 @@ const URlCategories = "/quadros/categoria/";
             <header>
                 <div class="header-content">
                 <div class="logo">
+                    <a className="flex gap-2" href="/">
                     <img src={logo} alt="museu do tempo logo" />
                     <span>MUSEU DO TEMPO</span>
+                    </a>
                 </div>
                 <nav>
                     <ul>
@@ -24,7 +26,7 @@ const URlCategories = "/quadros/categoria/";
                         </ul>
                     </li>
                     <li><a href="#">Linha do Tempo</a></li>
-                    <li><a href="#">Sobre</a></li>
+                    <li><a href="/Cadastro">Login</a></li>
                     </ul>
                 </nav>
                 </div>
