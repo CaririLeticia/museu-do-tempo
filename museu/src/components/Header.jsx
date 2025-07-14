@@ -14,7 +14,7 @@ const URlCategories = "/quadros/categoria/";
                 </div>
                 <nav>
                     <ul>
-                    <li><a href="#">Início</a></li>
+                    <li><a href="/">Início</a></li>
                     <li class="dropdown">
                         <a href="#">Exposições ▾</a>
                         <ul class="dropdown-menu">

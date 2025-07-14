@@ -8,6 +8,7 @@ import SobreQuadro from "../Pages/SobreQuadro";
 import { Quadros } from "../Pages/Quadros";
 import FiltroPorCategoria from "../Pages/FiltroPorCategoria";
 import { NotFound } from "../Pages/NotFound";
+import { CadastroExposicao } from "../components/CadastroExposicao";
 export const Paths = () => {
     return(
         <>
@@ -16,6 +17,7 @@ export const Paths = () => {
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/cadastro" element={<Cadastro/>}/>
+                    <Route path="/exposicao" element={<CadastroExposicao/>}/>
                     <Route path="/login" element={<Login/>}/>
                     <Route path="/quadros/obra/:id" element={<SobreQuadro/>}/>
                     <Route path="/quadros/categoria/:categoria" element={<FiltroPorCategoria/>}/>
