@@ -4,7 +4,7 @@ export const EraMedieval = () => {
   const [obras, setObras] = useState([]);
 
   useEffect(() => {
-    const apiKey = "7a7046ff-8360-4747-b143-dd4d941543a0"; // Coloque sua chave aqui direto pra testar
+    const apiKey = "7a7046ff-8360-4747-b143-dd4d941543a0";
     const buscarObras = async () => {
       try {
         const response = await fetch(
@@ -12,7 +12,7 @@ export const EraMedieval = () => {
         );
         const data = await response.json();
 
-        // Usa direto data.records da API Harvard
+        
         const obrasFiltradas = data.records
           .filter((record) => {
             const dataTexto = record.dated;
