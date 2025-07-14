@@ -456,3 +456,14 @@ nav ul li.dropdown > a::after {
   font-size: 1.8rem;
   max-width: 800px;
 }
+
+
+footer {
+  background-color: #09000F;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  color: #ffcf3f;
+  box-shadow: 0 -7px 15px rgba(217, 169, 24, 0.566);
+  font-family: 'Inria Sans', sans-serif;
+  user-select: none;
+}
