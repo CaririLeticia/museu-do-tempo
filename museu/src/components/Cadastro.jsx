@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const Cadastro = () => {
   const [nome, setNome] = useState("");
@@ -24,8 +26,11 @@ export const Cadastro = () => {
     } else if (password !== confirmPassword) {
       setErrMsg("As senhas não são iguais");
     } else {
+      toast.success("Cadastro realizado com sucesso!")
       setErrMsg("");
-      navigate("/login");
+      setTimeout(() => {
+        navigate("/login");
+      }, 2000)
     }
   };
 
@@ -96,6 +101,15 @@ export const Cadastro = () => {
           />
         </div>
       </section>
+      <ToastContainer
+      position="top-right"
+      autoClose={3000}
+      hideProgressBar={false}
+      closeOnClick
+      pauseOnHover
+      draggable
+      theme="colored"
+      />
     </>
   );
 };

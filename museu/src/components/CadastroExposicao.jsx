@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'
 export const CadastroExposicao = () => {
   const [nome, setNome] = useState();
   const [categoria, setCategoria] = useState();
@@ -8,9 +9,15 @@ export const CadastroExposicao = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!nome || !categoria || !urlImg) setErrMsg("Por favor, preencha todos os campos");
+    if (!nome || !categoria || !urlImg){
+      setErrMsg("Por favor, preencha todos os campos");
       return
-
+    }else {
+        toast.success("Obra cadastrada com sucesso!");
+        setErrMsg("");
+        return
+    }
+    
   }
   // FIX ME 
   // const criarExposicao = async (url, dados) => {
@@ -91,6 +98,15 @@ export const CadastroExposicao = () => {
           )}
         </form>
       </section>
+      <ToastContainer
+      draggable
+      pauseOnHover
+      position="top-right"
+      theme="colored"
+      autoClose={3000}
+      closeOnClick
+      hideProgressBar={false}
+      />
     </>
   );
 };

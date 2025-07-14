@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export const Login = (props) => {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
@@ -15,7 +16,10 @@ export const Login = (props) => {
     } else {
       setErrMsg("");
       console.log(`User: ${JSON.stringify({ nome, email })}`);
-      navigate("/");
+      toast.success("Login realizado com sucesso!");
+      setTimeout(() => {
+        navigate("/");
+      }, 2000)
     }
   };
 
@@ -70,6 +74,15 @@ export const Login = (props) => {
           />
         </div>
       </section>
+      <ToastContainer
+      position="top-right"
+      autoClose={3000}
+      hideProgressBar={false}
+      closeOnClick
+      pauseOnHover
+      draggable
+      theme="colored"
+      />
     </>
   );
 };
