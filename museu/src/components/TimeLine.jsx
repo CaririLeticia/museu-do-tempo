@@ -7,19 +7,19 @@ export const TimeLine = () => {
                 <div class="timeline-line"></div>
                 <div class="timeline-event">
                     <div class="circle"></div>
-                    <div class="label">Era Antiga</div>
+                    <div class="label"><br />Era Antiga</div>
                 </div>
                 <div class="timeline-event">
                     <div class="circle"></div>
-                    <div class="label">Era Medieval</div>
+                    <div class="label"><br />Era Medieval</div>
                 </div>
                 <div class="timeline-event">
                     <div class="circle"></div>
-                    <div class="label">Revolução Industrial</div>
+                    <div class="label"><br />Revolução Industrial</div>
                 </div>
                 <div class="timeline-event">
                     <div class="circle"></div>
-                    <div class="label">Futuro Imaginado</div>
+                    <div class="label"><br />Futuro Imaginado</div>
                 </div>
                 </div>
             </section>

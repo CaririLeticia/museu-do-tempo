@@ -25,7 +25,7 @@ function SobreQuadro() {
       <img
         src={obra.imagem || "Não foi possível carregar. Tente novamente depois"}
         alt={obra.nome}
-        className="max-w-md rounded-2xl shadow-2xl mb-6"
+        className="max-w-xl rounded-2xl shadow-2xl mb-6"
       />
       <p className="max-w-xl text-lg text-justify selection:text-amber-200">{obra.descricao}</p>
     </section>

@@ -18,7 +18,6 @@ export const EraMedieval = () => {
             const dataTexto = record.dated;
             if (!dataTexto) return false;
 
-            // Pegar números de dentro da string, como 1200, 13, etc.
             const matchAno = dataTexto.match(/\d{3,4}/);
             if (!matchAno) return false;
 
@@ -44,20 +43,22 @@ export const EraMedieval = () => {
 
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Obras da Era Medieval</h1>
+      <h1 className="text-2xl font-bold mb-4 text-center">
+        Obras da Era Medieval
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {obras.map((obra) => (
           <div
             key={obra.id}
-            className="border rounded p-2 shadow-md bg-white text-center"
+            className="max-w-sm m-2 bg-white/10 backdrop-blur-md shadow-lg border shadow-purple-950 border-white/20 hover:bg-white/5 hover:border-white/30 transition duration-300 ease-in-out"
           >
             <img
               src={obra.imagem}
               alt={obra.titulo}
-              className="w-full h-64 object-cover mb-2"
+              className="w-full h-64 object-cover mb-2 transition-transform duration-300 hover:scale-105"
             />
             <h2 className="text-lg font-semibold">{obra.titulo}</h2>
-            <p className="text-gray-600">Ano: {obra.ano}</p>
+            <p className="text-white">Ano: {obra.ano}</p>
           </div>
         ))}
       </div>

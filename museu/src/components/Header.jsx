@@ -1,33 +1,39 @@
-// import { logo } from "../assets/museuLogo.png"
+import logo from "../assets/museuLogo.png";
 export const Header = () => {
+  const URlCategories = "/quadros/categoria/";
   return (
     <>
       {/* TODO: trocar imagem da logo */}
       <header>
         <div class="header-content">
           <div class="logo">
-            <img src="" alt="museu do tempo logo" />
-            <span>MUSEU DO TEMPO</span>
+            <a className="flex gap-2" href="/">
+              <img src={logo} alt="museu do tempo logo" />
+              <span>MUSEU DO TEMPO</span>
+            </a>
           </div>
           <nav>
             <ul>
               <li>
-                <a href="#">Início</a>
+                <a href="/">Início</a>
               </li>
               <li class="dropdown">
                 <a href="#">Exposições ▾</a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a href="eraAntiga.html">Era Antiga</a>
+                    <a href="/quadros">Quadros</a>
                   </li>
                   <li>
-                    <a href="EraMedieval">Era Medieval</a>
+                    <a href={URlCategories + "era antiga"}>Era Antiga</a>
                   </li>
                   <li>
-                    <a href="RevolucaoIndustrial">Revolução Industrial</a>
+                    <a href={"/EraMedieval"}>Era Medieval</a>
                   </li>
                   <li>
-                    <a href="#">Futuro Imaginado</a>
+                    <a href={"/RevolucaoIndustrial"}>Revolução Industrial</a>
+                  </li>
+                  <li>
+                    <a href={URlCategories + "futuro"}>Futuro Imaginado</a>
                   </li>
                 </ul>
               </li>
@@ -35,7 +41,7 @@ export const Header = () => {
                 <a href="#">Linha do Tempo</a>
               </li>
               <li>
-                <a href="#">Sobre</a>
+                <a href="/Cadastro">Login</a>
               </li>
             </ul>
           </nav>

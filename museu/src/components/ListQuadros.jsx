@@ -3,7 +3,7 @@ import Card from "./Card"
 export const ListQuadros = ({ QuadrosArr }) => {
     return(
         <>
-        <section>
+        <section className="grid grid-cols-3 place-items-center">
             {QuadrosArr.length > 0 && (
                 QuadrosArr.map((quadro, index) => (
                     <Card

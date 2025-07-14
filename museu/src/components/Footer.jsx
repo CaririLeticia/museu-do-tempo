@@ -1,17 +1,14 @@
 export const Footer = () => {
   const perfil = [
-    { nome: "Leticia", github: "https://www.youtube.com/" },
-    { nome: "Caio", github: "https://www.youtube.com/" },
-
+    { nome: "Leticia", github: "https://github.com/" },
+    { nome: "Caio", github: "https://github.com/" },
+    { nome: "marley", github: "https://github.com/" },
     { nome: "Pablo", github: "https://github.com/stevopablo/" },
-
-    { nome: "Jorge", github: "https://www.youtube.com/" },
-    { nome: "Pablo", github: "https://www.youtube.com/" },
   ];
 
   return (
     <>
-      <section id="footer-container" className="absolute bottom-2 p-2 w-full">
+      <footer id="footer-container" className="p-7">
         <h2 className="text-center text-amber-300 font-bold text-2xl pb-3">
           Equipe:
         </h2>
@@ -24,6 +21,7 @@ export const Footer = () => {
                     href={pessoa.github}
                     className="text-white"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     {pessoa.nome}
                   </a>
@@ -34,7 +32,7 @@ export const Footer = () => {
             <p className="text-white">Carregando...</p>
           )}
         </div>
-      </section>
+      </footer>
     </>
   );
 };
