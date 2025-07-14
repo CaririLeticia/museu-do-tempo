@@ -1,0 +1,457 @@
+@import "tailwindcss";
+/* @import url('https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap'); */
+
+:root {
+  --primary-color: #09000F;
+  --secondary-color: #24004B;
+  --bg-input: rgba(255, 255, 255, 0.07);
+  --bg-form: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inria Sans', sans-serif;
+  background-color: #09000F;
+  color: white;
+}
+
+#form__cadastro{
+  background-color: var(--bg-form);
+  border: 1px solid rgba(255, 207, 63, 0.2);
+}
+
+#section__title {
+  text-shadow: 0 0 8px rgba(255, 207, 63, 0.4);
+}
+
+#nome__quadro, #img__url, #categoria{
+  background-color: var(--bg-input);
+  border: 1px solid rgba(255, 255, 255, 0.199) ;
+}
+
+#form__cadastro input{
+  transition: border 0.3s ease, background-color 0.3s ease;
+}
+#form__cadastro input:focus {
+  border-color: #ffcf3f;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#cadastrar__btn{
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 207, 63, 0.4);
+  animation: fadeIn 0.8s ease-out 0.5s forwards;
+}
+
+#cadastrar__btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 207, 63, 0.6);
+}
+
+/* Footer */
+
+#footer-container{
+  padding-top: 20px;
+}
+#footer-container  li:hover {
+  background-color: #ffcf3f;
+  color: #2e0067;
+  box-shadow: 0 0 12px #ffcf3f;
+}
+#footer-container h2{
+  text-shadow: 0 0 8px rgba(255, 207, 63, 0.4);
+}
+#footer__perfil a:hover{
+  color: #2e0067;
+
+}
+#footer__perfil{
+  background: rgba(255, 207, 63, 0.2);
+  border-radius: 12px;
+  color: #fff3a0;
+  box-shadow: 0 0 8px rgba(255, 207, 63, 0.3);
+}
+
+
+/* header */
+
+header {
+  background-color: #24004B;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  gap: 0.5rem;
+  color: #ffcf3f;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* Menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+/* Animação no hover */
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: #ffcf3f;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcf3f;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Estilo base para o dropdown */
+nav ul li.dropdown {
+  position: relative;
+}
+
+/* Submenu escondido por padrão */
+nav ul li.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #2e0067;
+  border-radius: 0 0 8px 8px;
+  min-width: 180px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  padding: 0.5rem 0;
+}
+
+/* Itens do submenu */
+nav ul li.dropdown .dropdown-menu li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav ul li.dropdown .dropdown-menu li a {
+  display: block;
+  padding: 0.7rem 1.2rem;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li.dropdown .dropdown-menu li a:hover {
+  background-color: #ffcf3f;
+  color: #2e0067;
+  font-weight: 600;
+}
+
+/* Mostrar submenu no hover */
+nav ul li.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Pequena seta no item principal */
+nav ul li.dropdown > a {
+  position: relative;
+  padding-right: 1rem;
+}
+
+nav ul li.dropdown > a::after {
+  content: "▾";
+  position: absolute;
+  right: 0.3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.7rem;
+  color: white;
+  width: auto !important;
+  background-color: transparent !important;
+  transition: none !important;
+}
+
+
+/* Carrossel */
+.carousel-container {
+  max-width: 1000px;
+  margin: 4rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: #140024;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.carousel.animated {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.card {
+  background-color: #2B0431;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  width: 250px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(255, 207, 63, 0.2);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 243 / 200;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  opacity: 0;
+  animation: fadeIn 0.4s ease-out 0.3s forwards;
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 0.5s forwards;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: linear-gradient(90deg, #ffcf3f, #ffe95c);
+  color: #1c002d;
+  font-weight: bold;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 207, 63, 0.4);
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 0.5s forwards;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 207, 63, 0.6);
+}
+
+.card-text {
+  max-width: 400px;
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 0.7s forwards;
+}
+
+.arrow-btn {
+  font-size: 2rem;
+  background: linear-gradient(90deg, #ffcf3f, #ffe95c);
+  color: #2B0431;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 207, 63, 0.5);
+}
+
+.arrow-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 207, 63, 0.8);
+}
+
+/* Linha do Tempo */
+.linha-do-tempo {
+  background-color: #09000F;
+  padding: 6rem 2rem 4rem;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.linha-do-tempo h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+}
+
+.linha-do-tempo h2 .sub {
+  opacity: 0.7;
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+  color: #ffcf3f;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* Container da timeline */
+.timeline-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Linha horizontal */
+.timeline-line {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  right: 5%;
+  height: 4px;
+  background-color: #ffcf3f;
+  transform: translateY(-50%);
+  border-radius: 2px;
+  z-index: 1;
+}
+
+/* Cada evento da timeline */
+.timeline-event {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  cursor: default;
+  transition: transform 0.3s ease;
+}
+
+.timeline-event:hover {
+  transform: scale(1.1);
+}
+
+.timeline-event .circle {
+  width: 24px;
+  height: 24px;
+  background: #ffcf3f;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 207, 63, 0.7);
+  margin-bottom: 0.8rem;
+  border: 2px solid #1c002d;
+}
+
+.timeline-event .label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffcf3f;
+  text-shadow: 0 0 5px rgba(255, 207, 63, 0.8);
+  user-select: none;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 130%; /* acima do evento */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2e0067;
+  color: white;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  width: 220px;
+  font-size: 0.9rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(46, 0, 103, 0.7);
+  z-index: 10;
+  text-align: center;
+  user-select: none;
+}
+
+/* Seta pequena embaixo do tooltip */
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #2e0067 transparent transparent transparent;
+}
+
+/* Mostrar tooltip no hover do evento */
+.timeline-event:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(-10px);
+}
+
+/* Hero */
+.hero {
+  height: 395px;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)),
+              url('src/galaxia.jpg') center/cover no-repeat; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero h1 {
+  font-size: 1.8rem;
+  max-width: 800px;
+}

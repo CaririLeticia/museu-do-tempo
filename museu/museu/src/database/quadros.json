@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "tema": "Era Antiga",
+    "nome": "O Nascimento de Vênus",
+    "artista": "Sandro Botticelli",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
+    "descricao": "Representa o nascimento mitológico da deusa Vênus, simbolizando beleza e proporção clássica."
+  },
+  {
+    "id": 2,
+    "tema": "Era Medieval",
+    "nome": "O Juízo Final",
+    "artista": "Giotto di Bondone",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Giotto_-_Last_Judgement_-_Cappella_Scrovegni_-_Padua_2001.jpg",
+    "descricao": "Cena religiosa retratando o julgamento das almas, com forte simbologia cristã medieval."
+  },
+  {
+    "id": 3,
+    "tema": "Revolução Industrial",
+    "nome": "Rain, Steam and Speed",
+    "artista": "J.M.W. Turner",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/1/11/Joseph_Mallord_William_Turner_-_Rain%2C_Steam_and_Speed_-_The_Great_Western_Railway_-_Google_Art_Project.jpg",
+    "descricao": "Expressa o poder da máquina e a velocidade da nova era industrial com uma locomotiva em movimento."
+  },
+  {
+    "id": 4,
+    "tema": "Futuro Imaginado",
+    "nome": "Horizontes Sintéticos",
+    "artista": "Aurora Synth",
+    "imagem": "https://example.com/horizontes-sinteticos.jpg",
+    "descricao": "Uma visão utópica de cidades flutuantes intergalácticas com tecnologia avançada e natureza integrada."
+  },
+  {
+  "id": 5,
+  "tema": "Era Antiga",
+  "nome": "Afrescos de Pompeia",
+  "artista": "Anônimo Romano",
+  "imagem": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Pompeii_-_House_of_Mysteries_-_Fresco_1.jpg",
+  "descricao": "Afrescos vibrantes que retratam mitos e cenas cotidianas, preservados pela erupção do Vesúvio."
+},
+{
+  "id": 6,
+  "tema": "Era Medieval",
+  "nome": "Tapeçarias da Dama e o Unicórnio",
+  "artista": "Anônimo Francês",
+  "imagem": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Lady_and_the_unicorn_Sense_of_Sight.jpg",
+  "descricao": "Conjunto de tapeçarias que representam os sentidos humanos em estilo gótico francês."
+},
+{
+  "id": 7,
+  "tema": "Revolução Industrial",
+  "nome": "O Quarto de Arlequim",
+  "artista": "Théodore Géricault",
+  "imagem": "https://upload.wikimedia.org/wikipedia/commons/3/3e/G%C3%A9ricault_-_Monomaniac_of_Envy.jpg",
+  "descricao": "Expressões humanas complexas em meio à transformação social e mental do século XIX."
+},
+{
+  "id": 8,
+  "tema": "Futuro Imaginado",
+  "nome": "Horizontes Sintéticos",
+  "artista": "Aurora Synth",
+  "imagem": "https://example.com/horizontes-sinteticos.jpg",
+  "descricao": "Paisagem digital com arquitetura flutuante e seres biotecnológicos integrados à natureza."
+},
+{
+    "id":9,
+    "tema":"Era Antiga",
+    "nome": "Cristo no Deserto",
+    "artista": "Ivan Kramskoy",
+    "descricao": "Pintado em 1872, este quadro retrata Jesus em meditação profunda no deserto. Com tons sóbrios e expressão introspectiva, a obra transmite silêncio, solidão e força espiritual.",
+    "imagem": "https://4.bp.blogspot.com/-bbTPmq-hMBc/TyaJJLjcloI/AAAAAAAAAK0/ZFr2Q9TKLp0/s1600/B(2012)+11+v+domingo+tc,+Cristo+no+deserto,+Kramskoy,+1872,+%C3%B3leo+sobre+tela,+180+x+210+cm+Tretyakov+Gallery,+Moscou,+R%C3%BAssia.jpg"
+}
+]
