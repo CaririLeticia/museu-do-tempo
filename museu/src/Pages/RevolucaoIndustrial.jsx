@@ -18,7 +18,7 @@ export const RevolucaoIndustrial = () => {
         console.log("Registros da API:", data.records);
 
         const obrasFiltradas = data.records
-          .filter((record) => record.primaryimageurl) // apenas com imagem
+          .filter((record) => record.primaryimageurl) 
           .map((record) => ({
             id: record.id,
             titulo: record.title,
